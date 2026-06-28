@@ -1,6 +1,11 @@
-import java.util.ArrayList;
+/**
+  Ceci est une classe representant une bibliothèque et permettant de géré des livres.
+ */
 
+import java.util.ArrayList;
+ 
 public class Bibliotheque {
+
     private ArrayList<Livre> livres;
 
     public Bibliotheque(){
