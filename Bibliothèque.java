@@ -33,7 +33,7 @@ public class Bibliotheque {
     public void reserverLivre(Livre livre, Emprunteur emprunteur){
             if(livre.isDisponible()) {
                 livre.setDisponible(false);
-                return neuw Reservation(livre,emprunteur,java.time.LocalDate.now());
+                return new Reservation(livre,emprunteur,java.time.LocalDate.now());
             }
             System.out.println("Le livre'" + livre.getTitre() + "' n'est pas disponible);")
             return null;
