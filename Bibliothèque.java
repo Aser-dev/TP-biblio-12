@@ -1,5 +1,5 @@
 /**
-  Ceci est une classe representant une bibliothèque et permettant de géré des livres.
+  Ceci est une classe representant une bibliothèque
  */
 
 import java.util.ArrayList;
