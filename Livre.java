@@ -21,5 +21,13 @@ public class Livre{
     public String toString() {
         return "Livre{titre='" + titre + "', auteur='" + auteur + "', isbn ='" + isbn + "'}";
     }
+private boolean disponible = true;
 
+public boolean isDisponible() {
+    return disponible;
+}
+
+public void setDisponible(boolean disponible) {
+    this.disponible = disponible;
+}
 }
