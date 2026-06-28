@@ -31,8 +31,12 @@ public class Bibliotheque {
     }
    
     public void reserverLivre(Livre livre, Emprunteur emprunteur){
-            Reservation r= new Reservation( livre, emprunteur, "28062026");
-            System.out.println("Livre réservé avec succès");
+            if(livre.isDisponible()) {
+                livre.setDisponible(false);
+                return neuw Reservation(livre,emprunteur,java.time.LocalDate.now());
+            }
+            System.out.println("Le livre'" + livre.getTitre() + "' n'est pas disponible);")
+            return null;
         }
  // Ajouter une methode pour reserver un livre par titre
     @Override
