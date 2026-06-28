@@ -29,4 +29,25 @@ public class Bibliotheque {
     public String toString() {
         return "Bibliotheque{livres=" + livres + "}";
     }
+     public ArrayList<Livre> rechercheParTitre(String titre) {
+        ArrayList<Livre> result = new ArrayList<Livre>();
+        for (Livre livre : livres) {
+            if (livre.getTitre().contains(titre)) {
+                result.add(livre);
+            }
+        }
+        return result;
+    }
+
+    public ArrayList<Livre> rechercheParAuteur(String auteur) {
+        ArrayList<Livre> result = new ArrayList<Livre>();
+        for (Livre livre : livres) {
+            if (livre.getAuteur().contains(auteur)) {
+                result.add(livre);
+            }
+        }
+        return result;
+    }
+
+    // ...
 }
