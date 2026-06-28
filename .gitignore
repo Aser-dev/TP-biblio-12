@@ -1,0 +1,14 @@
+#fichier compilé
+*.class
+#fichier d'archive
+*.jar
+*.war
+*.ear
+#dossier build
+target/
+build/
+bin/
+out/
+#fichier de l'IDE
+.idea/
+*.iml
