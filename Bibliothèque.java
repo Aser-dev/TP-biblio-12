@@ -30,11 +30,9 @@ public class Bibliotheque {
         }
     }
    
-    public void reserverLivre(){
-        Reservation r = new Reservation(Livre livre, Emprunteur emprunteur){
+    public void reserverLivre(Livre livre, Emprunteur emprunteur){
             Reservation r= new Reservation( livre, emprunteur, "28062026");
             System.out.println("Livre réservé avec succès");
-        }
     }
  // Ajouter une methode pour rechercher un livre par titre
     @Override
