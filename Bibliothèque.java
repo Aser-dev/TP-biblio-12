@@ -24,7 +24,7 @@ public class Bibliotheque {
             System.out.println(livre);
         }
     }
-
+ // Ajouter une methode pour rechercher un livre par titre
     @Override
     public String toString() {
         return "Bibliotheque{livres=" + livres + "}";
