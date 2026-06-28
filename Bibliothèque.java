@@ -29,7 +29,16 @@ public class Bibliotheque {
             System.out.println(livre);
         }
     }
- // Ajouter une methode pour rechercher un livre par titre
+   
+    public void reserverLivre(Livre livre, Emprunteur emprunteur){
+            if(livre.isDisponible()) {
+                livre.setDisponible(false);
+                return new Reservation(livre,emprunteur,java.time.LocalDate.now());
+            }
+            System.out.println("Le livre'" + livre.getTitre() + "' n'est pas disponible);")
+            return null;
+        }
+ // Ajouter une methode pour reserver un livre par titre
     @Override
     public String toString() {
         return "Bibliotheque{livres=" + livres + "}";
